@@ -17,11 +17,12 @@ before_install:
 install:
   - pip install -r requirements.txt
 script:
+  # run pytest while making zeyple as python module available
   # make zeyple available to python as a module
-  - PYTHONPATH=. py.test
+  - PYTHONPATH=. pytest
 
 after_script:
   # run tests (see tests folder)
-  - echo $PYTHONPATH
-  - pytest
+  #  - echo $PYTHONPATH
+  #  - pytest
   #  - pylint zeyple -f colorized -r no
