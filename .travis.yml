@@ -20,8 +20,8 @@ script:
   # make zeyple available to python as a module
   - PYTHONPATH=. py.test
 
+after_script:
   # run tests (see tests folder)
   - echo $PYTHONPATH
   - pytest
-  #after_script:
   #  - pylint zeyple -f colorized -r no
