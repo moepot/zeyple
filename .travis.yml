@@ -21,6 +21,7 @@ script:
   - PYTHONPATH=. py.test
 
   # run tests (see tests folder)
+  - echo $PYTHONPATH
   - pytest
   #after_script:
   #  - pylint zeyple -f colorized -r no
