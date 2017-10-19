@@ -18,7 +18,7 @@ before_install:
   - sudo apt-get install -qq libgpgme11-dev
 
   # pylint for checking coding style
-  - sudo apt-get install -qq pylint
+  #- sudo apt-get install -qq pylint
 
 install:
   - pip install -r requirements.txt
