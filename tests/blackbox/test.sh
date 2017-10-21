@@ -6,9 +6,9 @@
 cd ../../zeyple
 
 # configure zeyple
-sudo cp ./zeyple.conf.example /etc/zeyple.conf
-sudo touch /var/log/zeyple.log
-sudo chmod 777 /var/log/zeyple.log
+cp ./zeyple.conf.example /etc/zeyple.conf
+touch /var/log/zeyple.log
+chmod 777 /var/log/zeyple.log
 rm __init__.py
 
 # emulate postfix reinjection listening port
