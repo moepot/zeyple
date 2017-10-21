@@ -1,4 +1,4 @@
-#!/usr/bin/env test
+#!/usr/bin/env bash
 
 # install dependencies
 #apt install -qq netcat
