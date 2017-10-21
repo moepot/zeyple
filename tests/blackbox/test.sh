@@ -5,6 +5,8 @@
 
 # configure zeyple
 sudo cp ../../zeyple/zeyple.conf.example /etc/zeyple.conf
+sudo touch /var/log/zeyple.log
+sudo chmod 777 /var/log/zeyple.log
 
 # emulate postfix reinjection listening port
 # this will simply receive any data and save it as a file
