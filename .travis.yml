@@ -28,7 +28,7 @@ script:
   # run pytest while making zeyple as python module available
   # (see tests folder)
   - PYTHONPATH=. pytest
-  - cd tests/blackbox/ && ./test.sh
+  - cd tests/blackbox/ && sudo ./test.sh
 
 after_script:
   # run coding style tests
