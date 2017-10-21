@@ -18,6 +18,9 @@ before_install:
   # dependency for pygpgme (see requirements.txt)
   - sudo apt-get install -qq libgpgme11-dev
 
+  # dependency for blackbox tests
+  - sudo apt-get install -qq netcat
+
 install:
   - pip install -r requirements.txt
 
@@ -25,6 +28,7 @@ script:
   # run pytest while making zeyple as python module available
   # (see tests folder)
   - PYTHONPATH=. pytest
+  - cd tests/blackbox/ && test.sh
 
 after_script:
   # run coding style tests
