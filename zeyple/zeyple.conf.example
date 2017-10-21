@@ -5,6 +5,6 @@ log_file = /var/log/zeyple.log
 home = /var/lib/zeyple/keys
 
 [relay]
-host = localhost
+host = 127.0.0.1
 port = 10026
 
